@@ -852,7 +852,7 @@ thead{
                             <div className='row'>
                               <div className='col-sm-12 col-md-6 mb-3 mb-md-0 pt-3'>
                                 {signupdata.companyImageUrl !== "" ?
-                                  <img src={signupdata.companyImageUrl} className='w-50 logoimage' alt="testing imahe" /> :
+                                  <img src={signupdata.companyImageUrl} className='w-100 logoimage' alt="testing imahe" /> :
                                   <p className='h4 fw-bold'>{signupdata.companyname}</p>
                                 }
                               </div>
