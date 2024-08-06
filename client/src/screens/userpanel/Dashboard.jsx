@@ -66,7 +66,7 @@ export default function Dashboard() {
     try {
       const authToken = localStorage.getItem('authToken');
       const userid = localStorage.getItem("userid");
-      const response = await fetch(`https://roofing-31jz.onrender.comapi/getsignupdata/${userid}`, {
+      const response = await fetch(`https://roofing-31jz.onrender.com/api/getsignupdata/${userid}`, {
         headers: {
           'Authorization': authToken,
         }
@@ -94,7 +94,7 @@ export default function Dashboard() {
     try {
       const userid = localStorage.getItem("userid");
       const authToken = localStorage.getItem('authToken');
-      const response = await fetch(`https://roofing-31jz.onrender.comapi/invoicedata/${userid}`, {
+      const response = await fetch(`https://roofing-31jz.onrender.com/api/invoicedata/${userid}`, {
         headers: {
           'Authorization': authToken,
         }
@@ -126,7 +126,7 @@ export default function Dashboard() {
     try {
       const userid = localStorage.getItem("userid");
       const authToken = localStorage.getItem('authToken');
-      const response = await fetch(`https://roofing-31jz.onrender.comapi/currentMonthReceivedAmount/${userid}`, {
+      const response = await fetch(`https://roofing-31jz.onrender.com/api/currentMonthReceivedAmount/${userid}`, {
         headers: {
           'Authorization': authToken,
         }
@@ -153,7 +153,7 @@ export default function Dashboard() {
     try {
         const authToken = localStorage.getItem('authToken');
         const userId = localStorage.getItem('userid');
-        const response = await fetch(`https://roofing-31jz.onrender.comapi/totalPaymentReceived/${userId}`, {
+        const response = await fetch(`https://roofing-31jz.onrender.com/api/totalPaymentReceived/${userId}`, {
             headers: {
                 Authorization: authToken,
             },
@@ -177,7 +177,7 @@ const fetchOverdueInvoices = async () => {
   try {
     const authToken = localStorage.getItem('authToken');
     const userid = localStorage.getItem('userid');
-    const response = await fetch(`https://roofing-31jz.onrender.comapi/overdueInvoices/${userid}`, {
+    const response = await fetch(`https://roofing-31jz.onrender.com/api/overdueInvoices/${userid}`, {
       headers: { 'Authorization': authToken },
     });
     if (response.status === 401) {

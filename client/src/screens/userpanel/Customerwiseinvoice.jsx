@@ -33,7 +33,7 @@ function Customerwiseinvoice() {
     try {
       const authToken = localStorage.getItem('authToken');
     //   const customerEmail = localStorage.getItem('customerEmail');
-      const response = await fetch(`https://roofing-31jz.onrender.comapi/customerwisedata/${customerEmail}`, {
+      const response = await fetch(`https://roofing-31jz.onrender.com/api/customerwisedata/${customerEmail}`, {
         headers: {
           'Authorization': authToken,
         }

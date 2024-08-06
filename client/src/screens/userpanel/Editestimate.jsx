@@ -107,7 +107,7 @@ export default function Editestimate() {
     const fetchSignatureStatus = async () => {
         try {
             const ownerId = localStorage.getItem('userid');
-            const response = await fetch(`https://roofing-31jz.onrender.comapi/check-signature/${ownerId}`);
+            const response = await fetch(`https://roofing-31jz.onrender.com/api/check-signature/${ownerId}`);
             const data = await response.json();
             setHasSignature(data.hasSignature);
             setIsAddSignatureSwitchOn(data.hasSignature); 
@@ -121,7 +121,7 @@ export default function Editestimate() {
         if (event.target.checked) {
             try {
                 const ownerId = localStorage.getItem('userid');
-                const response = await fetch(`https://roofing-31jz.onrender.comapi/check-signature/${ownerId}`);
+                const response = await fetch(`https://roofing-31jz.onrender.com/api/check-signature/${ownerId}`);
                 const data = await response.json();
                 setHasSignature(data.hasSignature);
 
@@ -159,7 +159,7 @@ export default function Editestimate() {
             const ownerId = localStorage.getItem('userid');
             const email = localStorage.getItem('userEmail');
             const companyname = localStorage.getItem('companyname');
-            await fetch('https://roofing-31jz.onrender.comapi/ownersignature', {
+            await fetch('https://roofing-31jz.onrender.com/api/ownersignature', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -180,7 +180,7 @@ export default function Editestimate() {
     const fetchdata = async () => {
         try {
             const authToken = localStorage.getItem('authToken');
-            const response = await fetch(`https://roofing-31jz.onrender.comapi/geteditestimateData/${estimateid}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.com/api/geteditestimateData/${estimateid}`, {
                 headers: {
                   'Authorization': authToken,
                 }
@@ -221,7 +221,7 @@ export default function Editestimate() {
         try {
             const userid =  localStorage.getItem("userid");
             const authToken = localStorage.getItem('authToken');
-            const response = await fetch(`https://roofing-31jz.onrender.comapi/customers/${userid}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.com/api/customers/${userid}`, {
                 headers: {
                   'Authorization': authToken,
                 }
@@ -271,7 +271,7 @@ export default function Editestimate() {
         try {
             const userid =  localStorage.getItem("userid");
             const authToken = localStorage.getItem('authToken');
-            const response = await fetch(`https://roofing-31jz.onrender.comapi/itemdata/${userid}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.com/api/itemdata/${userid}`, {
                 headers: {
                   'Authorization': authToken,
                 }
@@ -312,7 +312,7 @@ export default function Editestimate() {
             };
             const authToken = localStorage.getItem('authToken');
     
-            const response = await fetch(`https://roofing-31jz.onrender.comapi/updateestimateData/${estimateid}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.com/api/updateestimateData/${estimateid}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -440,7 +440,7 @@ export default function Editestimate() {
             }
     
             const authToken = localStorage.getItem('authToken');
-            const response = await fetch(`https://roofing-31jz.onrender.comapi/delestimateitem/${estimateData._id}/${itemId}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.com/api/delestimateitem/${estimateData._id}/${itemId}`, {
                 method: 'GET',
                 headers: {
                     'Authorization': authToken,

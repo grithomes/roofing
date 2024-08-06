@@ -85,7 +85,7 @@ export default function SignUp() {
         console.log("imgurl: ", companyFormData);
 
 
-        // const companyUploadResponse = await fetch("https://roofing-31jz.onrender.comapi/upload-image", {
+        // const companyUploadResponse = await fetch("https://roofing-31jz.onrender.com/api/upload-image", {
         // method: 'POST',
         // body: companyFormData,
         // });
@@ -93,7 +93,7 @@ export default function SignUp() {
         // console.log('Uploaded company image:', uploadedCompanyImage);
         // const companyImageUrl = uploadedCompanyImage.companyImageUrl || '';
     
-        const response = await fetch("https://roofing-31jz.onrender.comapi/createuser", {
+        const response = await fetch("https://roofing-31jz.onrender.com/api/createuser", {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'

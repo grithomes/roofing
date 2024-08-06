@@ -46,7 +46,7 @@ export default function Customerlist() {
         try {
             const userid =  localStorage.getItem("userid");
             const authToken = localStorage.getItem('authToken');
-            const response = await fetch(`https://roofing-31jz.onrender.comapi/customers/${userid}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.com/api/customers/${userid}`, {
                 headers: {
                   'Authorization': authToken,
                 }
@@ -81,7 +81,7 @@ export default function Customerlist() {
     const handleDeleteClick = async (customerId) => {
         try {
             const authToken = localStorage.getItem('authToken');
-            const response = await fetch(`https://roofing-31jz.onrender.comapi/delcustomers/${customerId}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.com/api/delcustomers/${customerId}`, {
                 method: 'GET',
                 headers: {
                     'Authorization': authToken,

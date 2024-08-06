@@ -39,7 +39,7 @@ export default function Editcustomer() {
     const fetchCustomerData = async () => {
         try {
             const authToken = localStorage.getItem('authToken');
-            const response = await fetch(`https://roofing-31jz.onrender.comapi/getcustomers/${customerId}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.com/api/getcustomers/${customerId}`, {
                 headers: {
                   'Authorization': authToken,
                 }
@@ -75,7 +75,7 @@ export default function Editcustomer() {
                 ...customer
             };
             const authToken = localStorage.getItem('authToken');
-            const response = await fetch(`https://roofing-31jz.onrender.comapi/updatecostomerdata/${customerId}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.com/api/updatecostomerdata/${customerId}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -32,7 +32,7 @@ const fetchsignupdata = async () => {
     try {
     const userid = localStorage.getItem("userid");
     const authToken = localStorage.getItem('authToken');
-    const response = await fetch(`https://roofing-31jz.onrender.comapi/getsignupdata/${userid}`, {
+    const response = await fetch(`https://roofing-31jz.onrender.com/api/getsignupdata/${userid}`, {
         headers: {
         'Authorization': authToken,
         }
@@ -88,7 +88,7 @@ const handleSaveClick = async () => {
         city: JSON.stringify(credentials.city)
     };
     console.log("updatedsignupdata:->", updatedsignupdata);
-    const response = await fetch(`https://roofing-31jz.onrender.comapi/updatesignupdata/${userid}`, {
+    const response = await fetch(`https://roofing-31jz.onrender.com/api/updatesignupdata/${userid}`, {
         method: 'POST',
         headers: {
         'Content-Type': 'application/json',

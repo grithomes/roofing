@@ -55,7 +55,7 @@ export default function Reports() {
         try {
             setLoading(true);
             const userid = localStorage.getItem('userid');
-            const response = await fetch(`https://roofing-31jz.onrender.comapi/currentMonthReceivedAmount2/${userid}?startOfMonth=${moment(startDate).format('YYYY-MM-DD')}&endOfMonth=${moment(endDate).format('YYYY-MM-DD')}`);
+            const response = await fetch(`https://roofing-31jz.onrender.com/api/currentMonthReceivedAmount2/${userid}?startOfMonth=${moment(startDate).format('YYYY-MM-DD')}&endOfMonth=${moment(endDate).format('YYYY-MM-DD')}`);
             const data = await response.json();
             console.log('Received Data:', data);
             const totalAmount = data.reduce((acc, curr) => acc + curr.totalReceivedAmount, 0);

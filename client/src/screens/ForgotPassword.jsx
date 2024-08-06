@@ -6,7 +6,7 @@ export default function ForgotPassword() {
 
   const handleResetPassword = async () => {
     try {
-      const response = await fetch('https://roofing-31jz.onrender.comapi/forgot-password', {
+      const response = await fetch('https://roofing-31jz.onrender.com/api/forgot-password', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

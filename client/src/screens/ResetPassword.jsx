@@ -20,7 +20,7 @@ export default function ResetPassword() {
     }
 
     try {
-      const response = await fetch('https://roofing-31jz.onrender.comapi/reset-password', {
+      const response = await fetch('https://roofing-31jz.onrender.com/api/reset-password', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

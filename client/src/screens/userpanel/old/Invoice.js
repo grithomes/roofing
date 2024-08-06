@@ -30,7 +30,7 @@ export default function Invoice() {
     try {
       const userid = localStorage.getItem("userid");
       const authToken = localStorage.getItem('authToken');
-      const response = await fetch(`https://roofing-31jz.onrender.comapi/invoicedata/${userid}`, {
+      const response = await fetch(`https://roofing-31jz.onrender.com/api/invoicedata/${userid}`, {
         headers: {
           'Authorization': authToken,
         }
@@ -50,7 +50,7 @@ export default function Invoice() {
        setinvoices(json);
 
         const transactionPromises = json.map(async (invoice) => {
-          const response = await fetch(`https://roofing-31jz.onrender.comapi/gettransactiondata/${invoice._id}`, {
+          const response = await fetch(`https://roofing-31jz.onrender.com/api/gettransactiondata/${invoice._id}`, {
             headers: {
               'Authorization': authToken,
             }

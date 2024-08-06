@@ -35,7 +35,7 @@ useEffect(() => {
       const endOfMonth = new Date(currentYear, currentMonthIndex + 1, 0, 23, 59, 59);
       const authToken = localStorage.getItem('authToken');
 
-      const response = await fetch(`https://roofing-31jz.onrender.comapi/userEntries/${teamid}`, {
+      const response = await fetch(`https://roofing-31jz.onrender.com/api/userEntries/${teamid}`, {
         headers: {
           'Authorization': authToken,
         }

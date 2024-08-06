@@ -35,7 +35,7 @@ export default function Dashboard() {
           let isTeamMember = localStorage.getItem('isTeamMember');
           const authToken = localStorage.getItem('authToken');
 
-            const response = await fetch('https://roofing-31jz.onrender.comapi/clockin', {
+            const response = await fetch('https://roofing-31jz.onrender.com/api/clockin', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
@@ -76,7 +76,7 @@ export default function Dashboard() {
               let userEmail = localStorage.getItem('userEmail');
               let isTeamMember = localStorage.getItem('isTeamMember');
               const authToken = localStorage.getItem('authToken');
-              const response = await fetch('https://roofing-31jz.onrender.comapi/clockout', {
+              const response = await fetch('https://roofing-31jz.onrender.com/api/clockout', {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',
@@ -161,7 +161,7 @@ export default function Dashboard() {
             try {
               const userid = localStorage.getItem('userid');
               const authToken = localStorage.getItem('authToken');
-              const response = await fetch(`https://roofing-31jz.onrender.comapi/userEntries/${userid}`, {
+              const response = await fetch(`https://roofing-31jz.onrender.com/api/userEntries/${userid}`, {
                 headers: {
                   'Authorization': authToken,
                 }

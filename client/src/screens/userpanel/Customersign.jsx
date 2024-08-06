@@ -434,7 +434,7 @@ thead{
     try {
       // const userid = localStorage.getItem("userid");
       // const authToken = localStorage.getItem('authToken');
-      const response = await fetch(`https://roofing-31jz.onrender.comapi/getemailestimatedata/${estimateId}`, {
+      const response = await fetch(`https://roofing-31jz.onrender.com/api/getemailestimatedata/${estimateId}`, {
         // headers: {
         //   'Authorization': authToken,
         // }
@@ -479,7 +479,7 @@ thead{
       const userId =  estimateData.userid;  // localStorage.getItem("userid");
       // const userid =   localStorage.getItem("userid");
       // const authToken = localStorage.getItem('authToken');
-      const response = await fetch(`https://roofing-31jz.onrender.comapi/getemailsignupdata/${userId}`, {
+      const response = await fetch(`https://roofing-31jz.onrender.com/api/getemailsignupdata/${userId}`, {
         // headers: {
         //   'Authorization': authToken,
         // }
@@ -508,7 +508,7 @@ thead{
     try {
       // const userid = localStorage.getItem("userid");
       // const authToken = localStorage.getItem('authToken');
-      const response = await fetch(`https://roofing-31jz.onrender.comapi/getemailtransactiondata/${estimateId}`, {
+      const response = await fetch(`https://roofing-31jz.onrender.com/api/getemailtransactiondata/${estimateId}`, {
         // headers: {
         //   'Authorization': authToken,
         // }
@@ -545,7 +545,7 @@ thead{
       const ownerId = estimateData.userid;
       // const ownerId = localStorage.getItem('userid');
       // const authToken = localStorage.getItem('authToken');
-      const response = await fetch(`https://roofing-31jz.onrender.comapi/getemailownerdata/${ownerId}`, {
+      const response = await fetch(`https://roofing-31jz.onrender.com/api/getemailownerdata/${ownerId}`, {
         // headers: {
         //   'Authorization': authToken,
         // }
@@ -574,7 +574,7 @@ thead{
     }
   
     try {
-      const response = await fetch(`https://roofing-31jz.onrender.comapi/checkcustomersignature/${encodeURIComponent(estimateIdpass)}`);
+      const response = await fetch(`https://roofing-31jz.onrender.com/api/checkcustomersignature/${encodeURIComponent(estimateIdpass)}`);
       const json = await response.json();
       console.log('Customer signature response:', json);
       console.log('Customer signature response:', response.ok);
@@ -594,12 +594,12 @@ thead{
 
     try {
       // Check if customer signature already exists
-      const checkResponse = await fetch(`https://roofing-31jz.onrender.comapi/checkcustomersignature/${encodeURIComponent(estimateData._id)}`);
+      const checkResponse = await fetch(`https://roofing-31jz.onrender.com/api/checkcustomersignature/${encodeURIComponent(estimateData._id)}`);
       const checkJson = await checkResponse.json();
   
       if (checkJson.hasSignature) {
         // Update the existing customer signature
-        const updateResponse = await fetch(`https://roofing-31jz.onrender.comapi/updatecustomersignature/${encodeURIComponent(estimateData._id)}`, {
+        const updateResponse = await fetch(`https://roofing-31jz.onrender.com/api/updatecustomersignature/${encodeURIComponent(estimateData._id)}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -635,12 +635,12 @@ thead{
   
     try {
       // Check if customer signature already exists
-      const checkResponse = await fetch(`https://roofing-31jz.onrender.comapi/checkcustomersignature/${encodeURIComponent(estimateData._id)}`);
+      const checkResponse = await fetch(`https://roofing-31jz.onrender.com/api/checkcustomersignature/${encodeURIComponent(estimateData._id)}`);
       const checkJson = await checkResponse.json();
   
       // if (checkJson.ok) {
         // Update the existing customer signature
-        const updateResponse = await fetch(`https://roofing-31jz.onrender.comapi/updatecustomersignature/${encodeURIComponent(estimateData._id)}`, {
+        const updateResponse = await fetch(`https://roofing-31jz.onrender.com/api/updatecustomersignature/${encodeURIComponent(estimateData._id)}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -734,7 +734,7 @@ console.log(offset);
       }
 
       // Send email request to backend
-      const response = await fetch('https://roofing-31jz.onrender.comapi/send-estimate-signed-email', {
+      const response = await fetch('https://roofing-31jz.onrender.com/api/send-estimate-signed-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

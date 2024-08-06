@@ -67,7 +67,7 @@ export default function Editinvoice() {
     //     try {
     //         const userid =  localStorage.getItem("userid");
     //         const authToken = localStorage.getItem('authToken');
-    //         const response = await fetch(`https://roofing-31jz.onrender.comapi/geteditinvoicedata/${invoiceid}`, {
+    //         const response = await fetch(`https://roofing-31jz.onrender.com/api/geteditinvoicedata/${invoiceid}`, {
     //             headers: {
     //               'Authorization': authToken,
     //             }
@@ -98,7 +98,7 @@ export default function Editinvoice() {
     const fetchInvoiceData = async () => {
         try {
             const authToken = localStorage.getItem('authToken');
-            const response = await fetch(`https://roofing-31jz.onrender.comapi/geteditinvoicedata/${invoiceid}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.com/api/geteditinvoicedata/${invoiceid}`, {
                 headers: {
                     'Authorization': authToken,
                 }
@@ -128,7 +128,7 @@ export default function Editinvoice() {
         try {
             const userid =  localStorage.getItem("userid");
             const authToken = localStorage.getItem('authToken');
-            const response = await fetch(`https://roofing-31jz.onrender.comapi/customers/${userid}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.com/api/customers/${userid}`, {
                 headers: {
                   'Authorization': authToken,
                 }
@@ -178,7 +178,7 @@ export default function Editinvoice() {
         try {
             const userid =  localStorage.getItem("userid");
             const authToken = localStorage.getItem('authToken');
-            const response = await fetch(`https://roofing-31jz.onrender.comapi/itemdata/${userid}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.com/api/itemdata/${userid}`, {
                 headers: {
                   'Authorization': authToken,
                 }
@@ -218,7 +218,7 @@ export default function Editinvoice() {
             };
     
             const authToken = localStorage.getItem('authToken');
-            const response = await fetch(`https://roofing-31jz.onrender.comapi/updateinvoicedata/${invoiceid}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.com/api/updateinvoicedata/${invoiceid}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -341,7 +341,7 @@ export default function Editinvoice() {
             }
     
             const authToken = localStorage.getItem('authToken');
-            const response = await fetch(`https://roofing-31jz.onrender.comapi/delinvoiceitem/${invoiceData._id}/${itemId}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.com/api/delinvoiceitem/${invoiceData._id}/${itemId}`, {
                 method: 'GET',
                 headers: {
                     'Authorization': authToken,
