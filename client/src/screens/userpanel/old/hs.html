@@ -1,0 +1,19 @@
+<div className='invoice-price page-not-break'>
+  <div className='invoice-price-left text-end'>
+    <div className='d-none d-md-block'></div>
+
+  </div>
+  <div className='invoice-price-right'>
+    <small>Amount Due</small>
+    <span class="f-w-600 mt-3"><CurrencySign />{roundOff(estimateData.total - transactions.reduce((total, payment) => total + payment.paidamount, 0))}</span>
+
+  </div>
+
+</div>
+
+<div className='invoice-body'>
+  <div className='mt-1'>
+    <span>{estimateData.information == '' ? '' : 'Note:'}</span> <div dangerouslySetInnerHTML={{ __html: estimateData.information }} />
+
+  </div>
+</div>
