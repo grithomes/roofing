@@ -22,7 +22,7 @@ export default function Editprofile() {
         try {
             const userid =  localStorage.getItem("userid");
             const authToken = localStorage.getItem('authToken');
-            const response = await fetch(`https://grithomes.onrender.com/api/getsignupdata/${userid}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.comapi/getsignupdata/${userid}`, {
                 headers: {
                   'Authorization': authToken,
                 }
@@ -56,7 +56,7 @@ export default function Editprofile() {
     //     try {
     //         const userid = localStorage.getItem("userid");
     
-    //         const response = await fetch(`https://grithomes.onrender.com/api/updatesignupdata/${userid}`, {
+    //         const response = await fetch(`https://roofing-31jz.onrender.comapi/updatesignupdata/${userid}`, {
     //             method: 'POST',
     //             body: formData,
     //         });
@@ -80,7 +80,7 @@ export default function Editprofile() {
             const updatedsignupdata = {
                 ...signupdata
             };
-            const response = await fetch(`https://grithomes.onrender.com/api/updatesignupdata/${userid}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.comapi/updatesignupdata/${userid}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

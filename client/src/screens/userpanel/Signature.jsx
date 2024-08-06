@@ -37,7 +37,7 @@ export default function Signature() {
         try {
           const userid =   localStorage.getItem("userid");
           const authToken = localStorage.getItem('authToken');
-          const response = await fetch(`https://grithomes.onrender.com/api/getsignupdata/${userid}`, {
+          const response = await fetch(`https://roofing-31jz.onrender.comapi/getsignupdata/${userid}`, {
             headers: {
               'Authorization': authToken,
             }
@@ -67,7 +67,7 @@ export default function Signature() {
             const ownerId = localStorage.getItem('userid'); // Retrieve the ownerId
             const authToken = localStorage.getItem('authToken'); // Retrieve the auth token
 
-            const response = await fetch(`https://grithomes.onrender.com/api/check-signature/${ownerId}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.comapi/check-signature/${ownerId}`, {
                 headers: {
                     'Authorization': authToken,
                 }
@@ -121,7 +121,7 @@ export default function Signature() {
             // const companyname = localStorage.getItem('companyName'); // Assuming company name is stored in localStorage
     
             try {
-                const response = await fetch(`https://grithomes.onrender.com/api/check-signature/${ownerId}`, {
+                const response = await fetch(`https://roofing-31jz.onrender.comapi/check-signature/${ownerId}`, {
                     headers: {
                         'Authorization': localStorage.getItem('authToken'),
                     },
@@ -131,7 +131,7 @@ export default function Signature() {
     
                 if (json.hasSignature) {
                     // If signature exists, update it
-                    const updateResponse = await fetch('https://grithomes.onrender.com/api/update-ownersignature', {
+                    const updateResponse = await fetch('https://roofing-31jz.onrender.comapi/update-ownersignature', {
                         method: 'PUT',
                         headers: {
                             'Content-Type': 'application/json',
@@ -153,7 +153,7 @@ export default function Signature() {
                     }
                 } else {
                     // If no signature exists, create a new one
-                    const createResponse = await fetch('https://grithomes.onrender.com/api/ownersignature', {
+                    const createResponse = await fetch('https://roofing-31jz.onrender.comapi/ownersignature', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',

@@ -27,7 +27,7 @@ export default function Teamhistory() {
         try {
             const teamid = localStorage.getItem('userid');
             const authToken = localStorage.getItem('authToken');
-          const response = await fetch(`https://grithomes.onrender.com/api/userEntries/${teamid}`, {
+          const response = await fetch(`https://roofing-31jz.onrender.comapi/userEntries/${teamid}`, {
             headers: {
               'Authorization': authToken,
             }

@@ -34,7 +34,7 @@ export default function Addteam() {
     e.preventDefault();
     let userid = localStorage.getItem('userid');
     const authToken = localStorage.getItem('authToken');
-    const response = await fetch('https://grithomes.onrender.com/api/addteammember', {
+    const response = await fetch('https://roofing-31jz.onrender.comapi/addteammember', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

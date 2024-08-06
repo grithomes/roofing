@@ -39,7 +39,7 @@ export default function Editcustomer() {
     const fetchCustomerData = async () => {
         try {
             const authToken = localStorage.getItem('authToken');
-            const response = await fetch(`https://grithomes.onrender.com/api/getcustomers/${customerId}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.comapi/getcustomers/${customerId}`, {
                 headers: {
                   'Authorization': authToken,
                 }
@@ -75,7 +75,7 @@ export default function Editcustomer() {
                 ...customer
             };
             const authToken = localStorage.getItem('authToken');
-            const response = await fetch(`https://grithomes.onrender.com/api/updatecostomerdata/${customerId}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.comapi/updatecostomerdata/${customerId}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -56,7 +56,7 @@ export default function Editestimate() {
         try {
             const userid =  localStorage.getItem("userid");
             const authToken = localStorage.getItem('authToken');
-            const response = await fetch(`https://grithomes.onrender.com/api/geteditestimateData/${estimateid}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.comapi/geteditestimateData/${estimateid}`, {
                 headers: {
                   'Authorization': authToken,
                 }
@@ -89,7 +89,7 @@ export default function Editestimate() {
         try {
             const userid =  localStorage.getItem("userid");
             const authToken = localStorage.getItem('authToken');
-            const response = await fetch(`https://grithomes.onrender.com/api/customers/${userid}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.comapi/customers/${userid}`, {
                 headers: {
                   'Authorization': authToken,
                 }
@@ -139,7 +139,7 @@ export default function Editestimate() {
         try {
             const userid =  localStorage.getItem("userid");
             const authToken = localStorage.getItem('authToken');
-            const response = await fetch(`https://grithomes.onrender.com/api/itemdata/${userid}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.comapi/itemdata/${userid}`, {
                 headers: {
                   'Authorization': authToken,
                 }
@@ -179,7 +179,7 @@ export default function Editestimate() {
             };
             const authToken = localStorage.getItem('authToken');
     
-            const response = await fetch(`https://grithomes.onrender.com/api/updateestimateData/${estimateid}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.comapi/updateestimateData/${estimateid}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -295,7 +295,7 @@ export default function Editestimate() {
             }
     
             const authToken = localStorage.getItem('authToken');
-            const response = await fetch(`https://grithomes.onrender.com/api/delestimateitem/${estimateData._id}/${itemId}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.comapi/delestimateitem/${estimateData._id}/${itemId}`, {
                 method: 'GET',
                 headers: {
                     'Authorization': authToken,

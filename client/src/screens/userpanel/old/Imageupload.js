@@ -74,7 +74,7 @@ export default function Imageupload() {
         try {
             const userid =  localStorage.getItem("userid");
             const authToken = localStorage.getItem('authToken');
-            const response = await fetch(`https://grithomes.onrender.com/api/getsignupdata/${userid}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.comapi/getsignupdata/${userid}`, {
                 headers: {
                   'Authorization': authToken,
                 }
@@ -127,7 +127,7 @@ export default function Imageupload() {
                 }
             });
     
-            const response = await fetch(`https://grithomes.onrender.com/api/updatesignupdatadata/${userid}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.comapi/updatesignupdatadata/${userid}`, {
                 method: 'POST',
                 body: formData,
                 headers: {
@@ -162,7 +162,7 @@ export default function Imageupload() {
     //         const updatedsignupdata = {
     //             ...signupdata
     //         };
-    //         const response = await fetch(`https://grithomes.onrender.com/api/updatesignupdatadata/${userid}`, {
+    //         const response = await fetch(`https://roofing-31jz.onrender.comapi/updatesignupdatadata/${userid}`, {
     //             method: 'POST',
     //             headers: {
     //                 'Content-Type': 'application/json'

@@ -30,7 +30,7 @@ export default function Timeschemahistory() {
   const fetchAllEntries = async () => {
     try {
       const authToken = localStorage.getItem('authToken');
-      const response = await fetch(`https://grithomes.onrender.com/api/userEntries/${teamid}`, {
+      const response = await fetch(`https://roofing-31jz.onrender.comapi/userEntries/${teamid}`, {
         headers: {
           'Authorization': authToken,
         }
@@ -70,7 +70,7 @@ export default function Timeschemahistory() {
   //   try {
   //     // Fetch all entries for the merchant's team (teamid)
   //   const authToken = localStorage.getItem('authToken');
-  //     const response = await fetch(`https://grithomes.onrender.com/api/userEntries/${teamid}`, {
+  //     const response = await fetch(`https://roofing-31jz.onrender.comapi/userEntries/${teamid}`, {
   //       headers: {
   //         'Authorization': authToken,
   //       }
@@ -109,7 +109,7 @@ export default function Timeschemahistory() {
   // const fetchAllEntries = async () => {
   //   try {
   //     // Fetch all entries for the merchant's team (teamid)
-  //     const response = await fetch(`https://grithomes.onrender.com/api/userEntries/${teamid}`);
+  //     const response = await fetch(`https://roofing-31jz.onrender.comapi/userEntries/${teamid}`);
   //     const data = await response.json();
 
   //     setUserEntries(data.userEntries);

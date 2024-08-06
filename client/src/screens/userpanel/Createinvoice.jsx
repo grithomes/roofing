@@ -145,7 +145,7 @@ export default function Createinvoice() {
         try {
             const userid = localStorage.getItem('userid');
             const authToken = localStorage.getItem('authToken');
-            const response = await fetch(`https://grithomes.onrender.com/api/lastinvoicenumber/${userid}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.comapi/lastinvoicenumber/${userid}`, {
                 headers: {
                     'Authorization': authToken,
                 }
@@ -182,7 +182,7 @@ export default function Createinvoice() {
         try {
           const userid = localStorage.getItem("userid");
           const authToken = localStorage.getItem('authToken');
-          const response = await fetch(`https://grithomes.onrender.com/api/getsignupdata/${userid}`, {
+          const response = await fetch(`https://roofing-31jz.onrender.comapi/getsignupdata/${userid}`, {
             headers: {
               'Authorization': authToken,
             }
@@ -215,7 +215,7 @@ export default function Createinvoice() {
         try {
             const userid = localStorage.getItem("userid");
             const authToken = localStorage.getItem('authToken');
-            const response = await fetch(`https://grithomes.onrender.com/api/customers/${userid}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.comapi/customers/${userid}`, {
                 headers: {
                     'Authorization': authToken,
                 }
@@ -246,7 +246,7 @@ export default function Createinvoice() {
         try {
             const userid = localStorage.getItem("userid");
             const authToken = localStorage.getItem('authToken');
-            const response = await fetch(`https://grithomes.onrender.com/api/itemdata/${userid}`, {
+            const response = await fetch(`https://roofing-31jz.onrender.comapi/itemdata/${userid}`, {
                 headers: {
                     'Authorization': authToken,
                 }
@@ -540,7 +540,7 @@ export default function Createinvoice() {
             console.log(data, "Invoice Data ====");
 
             // Sending invoice data to the backend API
-            const response = await fetch('https://grithomes.onrender.com/api/savecreateinvoice', {
+            const response = await fetch('https://roofing-31jz.onrender.comapi/savecreateinvoice', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -678,7 +678,7 @@ export default function Createinvoice() {
         e.preventDefault();
         let userid = localStorage.getItem('userid');
         const authToken = localStorage.getItem('authToken');
-        const response = await fetch('https://grithomes.onrender.com/api/addcustomer', {
+        const response = await fetch('https://roofing-31jz.onrender.comapi/addcustomer', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

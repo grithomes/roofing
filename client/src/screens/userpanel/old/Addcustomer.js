@@ -48,7 +48,7 @@ export default function Addcustomer() {
     e.preventDefault();
     let userid = localStorage.getItem('userid');
     const authToken = localStorage.getItem('authToken');
-    const response = await fetch('https://grithomes.onrender.com/api/addcustomer', {
+    const response = await fetch('https://roofing-31jz.onrender.comapi/addcustomer', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

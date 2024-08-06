@@ -111,7 +111,7 @@ export default function Invoicedetail() {
       };
 
       try {
-        const response = await fetch('https://grithomes.onrender.com/api/addpayment', {
+        const response = await fetch('https://roofing-31jz.onrender.comapi/addpayment', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -158,7 +158,7 @@ export default function Invoicedetail() {
               
               
               }; // Update emailsent status
-          await fetch(`https://grithomes.onrender.com/api/updateinvoicedata/${invoiceid}`, {
+          await fetch(`https://roofing-31jz.onrender.comapi/updateinvoicedata/${invoiceid}`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -210,7 +210,7 @@ export default function Invoicedetail() {
     try {
       if ((savedDepositData != null || savedDepositData != "") && savedDepositData._id != undefined) {
         // If savedDepositData exists and has an ID, update the existing record
-        const response = await fetch(`https://grithomes.onrender.com/api/updatedeposit/${savedDepositData._id}`, {
+        const response = await fetch(`https://roofing-31jz.onrender.comapi/updatedeposit/${savedDepositData._id}`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -238,7 +238,7 @@ export default function Invoicedetail() {
 
           if (data.Success) {
             console.log('Deposit updated successfully:', data.deposit);
-            const savedDepositResponse = await fetch(`https://grithomes.onrender.com/api/deposit/${data.deposit._id}`);
+            const savedDepositResponse = await fetch(`https://roofing-31jz.onrender.comapi/deposit/${data.deposit._id}`);
             const savedDepositDatad = await savedDepositResponse.json();
             setsavedDepositData(savedDepositDatad.deposit);
             // You may update the state here if required
@@ -250,7 +250,7 @@ export default function Invoicedetail() {
 
       } else {
         // If savedDepositData is empty or does not have an ID, add a new record
-        const response = await fetch('https://grithomes.onrender.com/api/deposit', {
+        const response = await fetch('https://roofing-31jz.onrender.comapi/deposit', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -276,7 +276,7 @@ export default function Invoicedetail() {
         else {
           const data = await response.json();
           if (data.success) {
-            const savedDepositResponse = await fetch(`https://grithomes.onrender.com/api/deposit/${data.deposit._id}`, {
+            const savedDepositResponse = await fetch(`https://roofing-31jz.onrender.comapi/deposit/${data.deposit._id}`, {
               headers: {
                 'Authorization': authToken,
               }
@@ -310,7 +310,7 @@ export default function Invoicedetail() {
     try {
       if ((savedDepositData != null || savedDepositData != "") && savedDepositData._id != undefined) {
         // If savedDepositData exists and has an ID, update the existing record
-        const response = await fetch(`https://grithomes.onrender.com/api/updatedeposit/${savedDepositData._id}`, {
+        const response = await fetch(`https://roofing-31jz.onrender.comapi/updatedeposit/${savedDepositData._id}`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -338,7 +338,7 @@ export default function Invoicedetail() {
 
           if (data.Success) {
             console.log('Deposit updated successfully:', data.deposit);
-            const savedDepositResponse = await fetch(`https://grithomes.onrender.com/api/deposit/${data.deposit._id}`, {
+            const savedDepositResponse = await fetch(`https://roofing-31jz.onrender.comapi/deposit/${data.deposit._id}`, {
               headers: {
                 'Authorization': authToken,
               }
@@ -361,7 +361,7 @@ export default function Invoicedetail() {
         }
       } else {
         // If savedDepositData is empty or does not have an ID, add a new record
-        const response = await fetch('https://grithomes.onrender.com/api/deposit', {
+        const response = await fetch('https://roofing-31jz.onrender.comapi/deposit', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -386,7 +386,7 @@ export default function Invoicedetail() {
         else {
           const data = await response.json();
           if (data.success) {
-            const savedDepositResponse = await fetch(`https://grithomes.onrender.com/api/deposit/${data.deposit._id}`, {
+            const savedDepositResponse = await fetch(`https://roofing-31jz.onrender.comapi/deposit/${data.deposit._id}`, {
               headers: {
                 'Authorization': authToken,
               }
@@ -431,7 +431,7 @@ export default function Invoicedetail() {
     try {
       const userid = localStorage.getItem("userid");
       const authToken = localStorage.getItem('authToken');
-      const response = await fetch(`https://grithomes.onrender.com/api/getinvoicedata/${invoiceid}`, {
+      const response = await fetch(`https://roofing-31jz.onrender.comapi/getinvoicedata/${invoiceid}`, {
         headers: {
           'Authorization': authToken,
         }
@@ -462,7 +462,7 @@ export default function Invoicedetail() {
     try {
       const userid = localStorage.getItem("userid");
       const authToken = localStorage.getItem('authToken');
-      const response = await fetch(`https://grithomes.onrender.com/api/getdepositdata/${userid}/${invoiceid}`, {
+      const response = await fetch(`https://roofing-31jz.onrender.comapi/getdepositdata/${userid}/${invoiceid}`, {
         headers: {
           'Authorization': authToken,
         }
@@ -489,7 +489,7 @@ export default function Invoicedetail() {
     try {
       const userid = localStorage.getItem("userid");
       const authToken = localStorage.getItem('authToken');
-      const response = await fetch(`https://grithomes.onrender.com/api/gettransactiondata/${invoiceid}`, {
+      const response = await fetch(`https://roofing-31jz.onrender.comapi/gettransactiondata/${invoiceid}`, {
         headers: {
           'Authorization': authToken,
         }
@@ -526,7 +526,7 @@ export default function Invoicedetail() {
     try {
       const userid = localStorage.getItem("userid");
       const authToken = localStorage.getItem('authToken');
-      const response = await fetch(`https://grithomes.onrender.com/api/getsignupdata/${userid}`, {
+      const response = await fetch(`https://roofing-31jz.onrender.comapi/getsignupdata/${userid}`, {
         headers: {
           'Authorization': authToken,
         }
@@ -612,7 +612,7 @@ export default function Invoicedetail() {
       setexceedpaymenterror("");
     }
     try {
-      const response = await fetch('https://grithomes.onrender.com/api/addpayment', {
+      const response = await fetch('https://roofing-31jz.onrender.comapi/addpayment', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -661,7 +661,7 @@ export default function Invoicedetail() {
             
             
             }; // Update emailsent status
-        await fetch(`https://grithomes.onrender.com/api/updateinvoicedata/${invoiceid}`, {
+        await fetch(`https://roofing-31jz.onrender.comapi/updateinvoicedata/${invoiceid}`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -1023,7 +1023,7 @@ thead{
   const handleDeleteTransClick = async (transactionid) => {
     try {
         const authToken = localStorage.getItem('authToken');
-        const response = await fetch(`https://grithomes.onrender.com/api/deltransaction/${transactionid}`, {
+        const response = await fetch(`https://roofing-31jz.onrender.comapi/deltransaction/${transactionid}`, {
             method: 'GET',
             headers: {
                 'Authorization': authToken,
@@ -1054,7 +1054,7 @@ thead{
   const handleRemove = async (invoiceid) => {
     const authToken = localStorage.getItem('authToken');
     try {
-      const response = await fetch(`https://grithomes.onrender.com/api/deldata/${invoiceid}`, {
+      const response = await fetch(`https://roofing-31jz.onrender.comapi/deldata/${invoiceid}`, {
         method: 'GET',
         headers: {
           'Authorization': authToken,
@@ -1124,7 +1124,7 @@ thead{
     const contentAsPdf = await generatePdfFromHtml();
     try {
       const finalContent = content.trim() || ``; // If content is empty, use default value
-      const response = await fetch('https://grithomes.onrender.com/api/send-invoice-email', {
+      const response = await fetch('https://roofing-31jz.onrender.comapi/send-invoice-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -1153,7 +1153,7 @@ thead{
         if(invoiceData.status == 'Paid' || invoiceData.status == 'Partially Paid')
         {
           const updatedData = {invoiceData }
-          await fetch(`https://grithomes.onrender.com/api/updateinvoicedata/${invoiceid}`, {
+          await fetch(`https://roofing-31jz.onrender.comapi/updateinvoicedata/${invoiceid}`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -1163,7 +1163,7 @@ thead{
           });
         }else {
           const updatedData = { ...invoiceData,status:"Send", emailsent: 'yes' }
-          await fetch(`https://grithomes.onrender.com/api/updateinvoicedata/${invoiceid}`, {
+          await fetch(`https://roofing-31jz.onrender.comapi/updateinvoicedata/${invoiceid}`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -1199,7 +1199,7 @@ thead{
     const contentAsPdf = await generatePdfFromHtml();
     try {
       const finalContent = content.trim() || ``; // If content is empty, use default value
-      const response = await fetch('https://grithomes.onrender.com/api/send-deposit-email', {
+      const response = await fetch('https://roofing-31jz.onrender.comapi/send-deposit-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -1228,7 +1228,7 @@ thead{
         if(invoiceData.status == 'Paid' || invoiceData.status == 'Partially Paid')
         {
           const updatedData = {invoiceData }
-          await fetch(`https://grithomes.onrender.com/api/updateinvoicedata/${invoiceid}`, {
+          await fetch(`https://roofing-31jz.onrender.comapi/updateinvoicedata/${invoiceid}`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -1238,7 +1238,7 @@ thead{
           });
         }else {
           const updatedData = { ...invoiceData,status:"Send", emailsent: 'yes' }
-          await fetch(`https://grithomes.onrender.com/api/updateinvoicedata/${invoiceid}`, {
+          await fetch(`https://roofing-31jz.onrender.comapi/updateinvoicedata/${invoiceid}`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -1248,7 +1248,7 @@ thead{
           });
         }
         // const updatedData = { ...invoiceData, emailsent: 'yes' }; // Update emailsent status
-        // await fetch(`https://grithomes.onrender.com/api/updateinvoicedata/${invoiceid}`, {
+        // await fetch(`https://roofing-31jz.onrender.comapi/updateinvoicedata/${invoiceid}`, {
         //   method: 'POST',
         //   headers: {
         //     'Content-Type': 'application/json',

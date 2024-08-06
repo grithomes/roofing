@@ -22,7 +22,7 @@ export default function Login() {
 //   const handleSubmit = async(e) => {
 //     e.preventDefault();
 //     setloginbtnloader(true);
-//     const response = await fetch("https://grithomes.onrender.com/api/login",{
+//     const response = await fetch("https://roofing-31jz.onrender.comapi/login",{
 //         method:'POST',
 //         headers: {
 //             'Content-Type':'application/json'
@@ -69,7 +69,7 @@ const handleSubmit = async (e) => {
 
   try {
     const sanitizedEmail = credentials.email.toLowerCase().replace(/\s+/g, '');
-    const response = await fetch("https://grithomes.onrender.com/api/login", {
+    const response = await fetch("https://roofing-31jz.onrender.comapi/login", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
