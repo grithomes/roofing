@@ -58,23 +58,23 @@
 //         //     port: 465, // Replace with the appropriate port
 //         //     secure: true, // true for 465, false for other ports
 //         //     auth: {
-//         //       user: 'grithomesltd@gmail.com',
-//         //       pass: 'lpctmxmuoudgnopd'
+//         //       user: 'Confianceinc13@gmail.com',
+//         //       pass: 'wrrocjjkbjehgodk'
 //         //     }
 //         //   });
 // const transporter = nodemailer.createTransport({
 //     service: 'gmail',
 //     auth: {
-//         user: "grithomesltd@gmail.com",
-//         // pass: "lpctmxmuoudgnopd"
-//         pass: "lpctmxmuoudgnopd"
+//         user: "Confianceinc13@gmail.com",
+//         // pass: "wrrocjjkbjehgodk"
+//         pass: "wrrocjjkbjehgodk"
 //     },
 //   });
 
 //   const currencySign = getCurrencySign(currencyType);
   
 //     const mailOptions = {
-//       from: 'grithomesltd@gmail.com',
+//       from: 'Confianceinc13@gmail.com',
 //       to: to.join(', '),
 //       bcc: bcc.join(', '),
 //       subject: `Invoice from ${companyName}`,
@@ -155,8 +155,8 @@
 // const transporter = nodemailer.createTransport({
 //     service: 'gmail',
 //     auth: {
-//         user: "grithomesltd@gmail.com",
-//         pass: "lpctmxmuoudgnopd"
+//         user: "Confianceinc13@gmail.com",
+//         pass: "wrrocjjkbjehgodk"
 //     },
 //   });
 // // const transporter = nodemailer.createTransport({
@@ -164,15 +164,15 @@
 // //     port: 465, // Replace with the appropriate port
 // //     secure: true, // true for 465, false for other ports
 // //     auth: {
-// //       user: 'grithomesltd@gmail.com',
-// //       pass: 'lpctmxmuoudgnopd'
+// //       user: 'Confianceinc13@gmail.com',
+// //       pass: 'wrrocjjkbjehgodk'
 // //     }
 // //   });
 
 //   const currencySign = getCurrencySign(currencyType);
   
 //     const mailOptions = {
-//       from: 'grithomesltd@gmail.com',
+//       from: 'Confianceinc13@gmail.com',
 //       to: to.join(', '),
 //       bcc: bcc.join(', '),
 //       subject: `Invoice from ${companyName}`,
@@ -253,8 +253,8 @@
 // const transporter = nodemailer.createTransport({
 //     service: 'gmail',
 //     auth: {
-//         user: "grithomesltd@gmail.com",
-//         pass: "lpctmxmuoudgnopd"
+//         user: "Confianceinc13@gmail.com",
+//         pass: "wrrocjjkbjehgodk"
 //     },
 //   });
 // // const transporter = nodemailer.createTransport({
@@ -262,15 +262,15 @@
 // //     port: 465, // Replace with the appropriate port
 // //     secure: true, // true for 465, false for other ports
 // //     auth: {
-// //       user: 'grithomesltd@gmail.com',
-// //       pass: 'lpctmxmuoudgnopd'
+// //       user: 'Confianceinc13@gmail.com',
+// //       pass: 'wrrocjjkbjehgodk'
 // //     }
 // //   });
 
 //   const currencySign = getCurrencySign(currencyType);
   
 //     const mailOptions = {
-//       from: 'grithomesltd@gmail.com',
+//       from: 'Confianceinc13@gmail.com',
 //       to: to.join(', '),
 //       bcc: bcc.join(', '),
 //       subject: `Estimate from ${companyName}`,
@@ -779,8 +779,8 @@
 //     const transporter = nodemailer.createTransport({
 //         service: 'gmail',
 //         auth: {
-//             user: "grithomesltd@gmail.com",
-//             pass: "lpctmxmuoudgnopd"
+//             user: "Confianceinc13@gmail.com",
+//             pass: "wrrocjjkbjehgodk"
 //         },
 //     });
 //     // const transporter = nodemailer.createTransport({
@@ -788,8 +788,8 @@
 //     //     port: 465, // Replace with the appropriate port
 //     //     secure: true, // true for 465, false for other ports
 //     //     auth: {
-//     //       user: 'grithomesltd@gmail.com',
-//     //       pass: 'lpctmxmuoudgnopd'
+//     //       user: 'Confianceinc13@gmail.com',
+//     //       pass: 'wrrocjjkbjehgodk'
 //     //     }
 //     //   });
 
@@ -831,8 +831,8 @@
 //         service: "Gmail",
 //       secure: false,
 //       auth: {
-//           user: "grithomesltd@gmail.com",
-//           pass: "lpctmxmuoudgnopd"
+//           user: "Confianceinc13@gmail.com",
+//           pass: "wrrocjjkbjehgodk"
 //       },
 //       tls:{
 //         rejectUnauthorized: false
@@ -843,8 +843,8 @@
 //     //     port: 465, // Replace with the appropriate port
 //     //     secure: true, // true for 465, false for other ports
 //     //     auth: {
-//     //       user: 'grithomesltd@gmail.com',
-//     //       pass: 'lpctmxmuoudgnopd'
+//     //       user: 'Confianceinc13@gmail.com',
+//     //       pass: 'wrrocjjkbjehgodk'
 //     //     }
 //     //   });
   
@@ -2341,8 +2341,8 @@
 //     const transporter = nodemailer.createTransport({
 //         service: 'gmail',
 //         auth: {
-//             user: "grithomesltd@gmail.com",
-//             pass: "lpctmxmuoudgnopd"
+//             user: "Confianceinc13@gmail.com",
+//             pass: "wrrocjjkbjehgodk"
 //         },
 //     });
 //     // const transporter = nodemailer.createTransport({
@@ -2350,13 +2350,13 @@
 //     //     port: 465, // Replace with the appropriate port
 //     //     secure: true, // true for 465, false for other ports
 //     //     auth: {
-//     //       user: 'grithomesltd@gmail.com',
-//     //       pass: 'lpctmxmuoudgnopd'
+//     //       user: 'Confianceinc13@gmail.com',
+//     //       pass: 'wrrocjjkbjehgodk'
 //     //     }
 //     //   });
 
 //     const mailOptions = {
-//         from: 'grithomesltd@gmail.com',
+//         from: 'Confianceinc13@gmail.com',
 //         to: userEmail,
 //         subject: subject,
 //         html: message,
@@ -3446,22 +3446,22 @@ router.post('/send-invoice-email', async (req, res) => {
     //     port: 465, // Replace with the appropriate port
     //     secure: true, // true for 465, false for other ports
     //     auth: {
-    //       user: 'grithomesltd@gmail.com',
-    //       pass: 'lpctmxmuoudgnopd'
+    //       user: 'Confianceinc13@gmail.com',
+    //       pass: 'wrrocjjkbjehgodk'
     //     }
     //   });
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: "grithomesltd@gmail.com",
-            pass: "lpctmxmuoudgnopd"
+            user: "Confianceinc13@gmail.com",
+            pass: "wrrocjjkbjehgodk"
         },
       });
 
     const currencySign = getCurrencySign(currencyType);
 
     const mailOptions = {
-        from: 'grithomesltd@gmail.com',
+        from: 'Confianceinc13@gmail.com',
         to: to.join(', '),
         bcc: bcc.join(', '),
         subject: `Invoice from ${companyName}`,
@@ -3544,8 +3544,8 @@ router.post('/send-deposit-email', async (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: "grithomesltd@gmail.com",
-            pass: "lpctmxmuoudgnopd"
+            user: "Confianceinc13@gmail.com",
+            pass: "wrrocjjkbjehgodk"
         },
       });
 
@@ -3554,15 +3554,15 @@ router.post('/send-deposit-email', async (req, res) => {
     //     port: 465, // Replace with the appropriate port
     //     secure: true, // true for 465, false for other ports
     //     auth: {
-    //       user: 'grithomesltd@gmail.com',
-    //       pass: 'lpctmxmuoudgnopd'
+    //       user: 'Confianceinc13@gmail.com',
+    //       pass: 'wrrocjjkbjehgodk'
     //     }
     //   });
 
     const currencySign = getCurrencySign(currencyType);
 
     const mailOptions = {
-        from: 'grithomesltd@gmail.com',
+        from: 'Confianceinc13@gmail.com',
         to: to.join(', '),
         bcc: bcc.join(', '),
         subject: `Invoice from ${companyName}`,
@@ -3653,8 +3653,8 @@ router.post('/send-estimate-email', async (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: "grithomesltd@gmail.com",
-            pass: "lpctmxmuoudgnopd"
+            user: "Confianceinc13@gmail.com",
+            pass: "wrrocjjkbjehgodk"
         },
       });
 
@@ -3663,15 +3663,15 @@ router.post('/send-estimate-email', async (req, res) => {
     //     port: 465, // Replace with the appropriate port
     //     secure: true, // true for 465, false for other ports
     //     auth: {
-    //       user: 'grithomesltd@gmail.com',
-    //       pass: 'lpctmxmuoudgnopd'
+    //       user: 'Confianceinc13@gmail.com',
+    //       pass: 'wrrocjjkbjehgodk'
     //     }
     //   });
 
     const currencySign = getCurrencySign(currencyType);
 
     const mailOptions = {
-        from: 'grithomesltd@gmail.com',
+        from: 'Confianceinc13@gmail.com',
         to: to.join(', '),
         bcc: bcc.join(', '),
         subject: `Estimate from ${companyName}`,
@@ -3755,8 +3755,8 @@ router.post('/send-estimate-signed-email', async (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: "grithomesltd@gmail.com",
-            pass: "lpctmxmuoudgnopd"
+            user: "Confianceinc13@gmail.com",
+            pass: "wrrocjjkbjehgodk"
         },
       });
 
@@ -4276,8 +4276,8 @@ function sendWelcomeEmail(userEmail, name, isFirstTimeLogin) {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: "grithomesltd@gmail.com",
-            pass: "lpctmxmuoudgnopd"
+            user: "Confianceinc13@gmail.com",
+            pass: "wrrocjjkbjehgodk"
         },
       });
     // const transporter = nodemailer.createTransport({
@@ -4285,8 +4285,8 @@ function sendWelcomeEmail(userEmail, name, isFirstTimeLogin) {
     //     port: 465, // Replace with the appropriate port
     //     secure: true, // true for 465, false for other ports
     //     auth: {
-    //       user: 'grithomesltd@gmail.com',
-    //       pass: 'lpctmxmuoudgnopd'
+    //       user: 'Confianceinc13@gmail.com',
+    //       pass: 'wrrocjjkbjehgodk'
     //     }
     //   });
 
@@ -4327,8 +4327,8 @@ router.post('/forgot-password', async (req, res) => {
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: "grithomesltd@gmail.com",
-                pass: "lpctmxmuoudgnopd"
+                user: "Confianceinc13@gmail.com",
+                pass: "wrrocjjkbjehgodk"
             },
           });
         // const transporter = nodemailer.createTransport({
@@ -4336,8 +4336,8 @@ router.post('/forgot-password', async (req, res) => {
         //     port: 465, // Replace with the appropriate port
         //     secure: true, // true for 465, false for other ports
         //     auth: {
-        //       user: 'grithomesltd@gmail.com',
-        //       pass: 'lpctmxmuoudgnopd'
+        //       user: 'Confianceinc13@gmail.com',
+        //       pass: 'wrrocjjkbjehgodk'
         //     }
         //   });
 
@@ -6289,8 +6289,8 @@ function sendTeamWelcomeEmail(userEmail, name, isFirstTimeLogin, companyName) {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: "grithomesltd@gmail.com",
-            pass: "lpctmxmuoudgnopd"
+            user: "Confianceinc13@gmail.com",
+            pass: "wrrocjjkbjehgodk"
         },
       });
     // const transporter = nodemailer.createTransport({
@@ -6298,13 +6298,13 @@ function sendTeamWelcomeEmail(userEmail, name, isFirstTimeLogin, companyName) {
     //     port: 465, // Replace with the appropriate port
     //     secure: true, // true for 465, false for other ports
     //     auth: {
-    //       user: 'grithomesltd@gmail.com',
-    //       pass: 'lpctmxmuoudgnopd'
+    //       user: 'Confianceinc13@gmail.com',
+    //       pass: 'wrrocjjkbjehgodk'
     //     }
     //   });
 
     const mailOptions = {
-        from: 'grithomesltd@gmail.com',
+        from: 'Confianceinc13@gmail.com',
         to: userEmail,
         subject: subject,
         html: message,
