@@ -1639,10 +1639,10 @@ thead{
 
                           </div>
 
-                          <div className='invoice-body'>
+                          <div className='invoice-body invoice-body-text'>
                             <div className='mt-1'>
-                              <span>{invoiceData.information == '' ? '' : 'Note:'}</span> <div dangerouslySetInnerHTML={{ __html: invoiceData.information }} />
-
+                              <span>{invoiceData.information == '' ? '' : 'Note:'}</span> 
+                              <div className='information-content' dangerouslySetInnerHTML={{ __html: invoiceData.information }} />
                             </div>
                           </div>
 
