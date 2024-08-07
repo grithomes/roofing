@@ -17,7 +17,7 @@ useEffect(() => {
         return 'C$'; // Canadian Dollar
       case "INR":
       default:
-        return '₹'; // Indian Rupee
+        return 'C$'; // Canadian Dollar
     }
   };
 

@@ -1082,7 +1082,9 @@ thead{
 
                           <div className='invoice-body'>
                             <div className='mt-1'>
-                              <span>{estimateData.information == '' ? '' : 'Note:'}</span> <div dangerouslySetInnerHTML={{ __html: estimateData.information }} />
+                            {console.log(estimateData,"==================")}
+                              <span>{estimateData.information == '' ? '' : 'Note:'}</span> 
+                              <div dangerouslySetInnerHTML={{ __html: estimateData.information }} />
 
                             </div>
                           </div>
