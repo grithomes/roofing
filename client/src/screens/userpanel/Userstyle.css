@@ -536,13 +536,13 @@ display: none;}
 .invoice-body {
   background: #fff;
   padding: 30px 50px;
-}
+}        
 .invoice-body-text{
   width: 100%;
   height: auto;
 }
 .information-content {
-  width: 100%;
+  width: 50%;
   height: auto;
   overflow: hidden;
 }
